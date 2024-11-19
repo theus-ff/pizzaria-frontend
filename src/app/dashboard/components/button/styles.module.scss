@@ -1,0 +1,41 @@
+.button{
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--green-900);
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--white);
+  
+  filter: contrast(0.85);
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: all 0.5s;
+
+  &:hover{
+    transform: scale(1.1);
+  }
+}
+
+.loading{
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border-radius: 100%;
+  border: 3.5px solid var(--white);
+  border-top: 0;
+  border-left: 0;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
